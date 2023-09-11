@@ -99,7 +99,8 @@ function Form({ onSubmit }) {
     // This condition should check whether either the description or value is empty
 
     {/* Write a Code here */}
-  
+    const isButtonDisabled = description === '' || value === '';
+
     return (
       <FormStyles data-testid="form" onSubmit={handleSubmit}>
         <Select
